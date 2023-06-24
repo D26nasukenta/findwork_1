@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\nasuf\Documents\findwork_1\就職作品_230404\Debug\GM31_0419_02.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\nasuf\Documents\findwork_1\就職作品_230404\BlackShadowPS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\nasuf\Documents\findwork_1\就職作品_230404\BlackShadowVS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\nasuf\Documents\findwork_1\就職作品_230404\DepthShadowMappingPS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\nasuf\Documents\findwork_1\就職作品_230404\DepthShadowMappingVS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\nasuf\Documents\findwork_1\就職作品_230404\pixelLightingPS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\nasuf\Documents\findwork_1\就職作品_230404\pixelLightingVS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\nasuf\Documents\findwork_1\就職作品_230404\unlitTexturePS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\nasuf\Documents\findwork_1\就職作品_230404\unlitTextureVS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\nasuf\Documents\findwork_1\就職作品_230404\vertexLightingPS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\nasuf\Documents\findwork_1\就職作品_230404\vertexLightingVS.cso</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

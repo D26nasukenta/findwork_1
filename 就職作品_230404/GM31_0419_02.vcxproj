@@ -152,6 +152,7 @@
     <ClCompile Include="BallNotRandomState.cpp" />
     <ClCompile Include="BallNotWaitState.cpp" />
     <ClCompile Include="camera.cpp" />
+    <ClCompile Include="Command.cpp" />
     <ClCompile Include="controlui.cpp" />
     <ClCompile Include="discoverstate.cpp" />
     <ClCompile Include="doState.cpp" />
@@ -174,6 +175,7 @@
     <ClCompile Include="imgui\imgui_tables.cpp" />
     <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="input.cpp" />
+    <ClCompile Include="InputHudler.cpp" />
     <ClCompile Include="keepercatchstate.cpp" />
     <ClCompile Include="keeperpreparestate.cpp" />
     <ClCompile Include="keeperstate.cpp" />
@@ -183,6 +185,7 @@
     <ClCompile Include="meshfield.cpp" />
     <ClCompile Include="model.cpp" />
     <ClCompile Include="monitoringstate.cpp" />
+    <ClCompile Include="MoveCommand.cpp" />
     <ClCompile Include="particle.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="polygon2D.cpp" />
@@ -191,6 +194,7 @@
     <ClCompile Include="result.cpp" />
     <ClCompile Include="resultbg.cpp" />
     <ClCompile Include="score.cpp" />
+    <ClCompile Include="ShootCommand.cpp" />
     <ClCompile Include="skydome.cpp" />
     <ClCompile Include="slidingState.cpp" />
     <ClCompile Include="state.cpp" />
@@ -216,6 +220,7 @@
     <ClInclude Include="BallNotWaitState.h" />
     <ClInclude Include="camera.h" />
     <ClInclude Include="cloth.h" />
+    <ClInclude Include="Command.h" />
     <ClInclude Include="controlui.h" />
     <ClInclude Include="discoverstate.h" />
     <ClInclude Include="doState.h" />
@@ -241,6 +246,7 @@
     <ClInclude Include="imgui\imstb_textedit.h" />
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="input.h" />
+    <ClInclude Include="InputHudler.h" />
     <ClInclude Include="keepercatchstate.h" />
     <ClInclude Include="keeperpreparestate.h" />
     <ClInclude Include="keeperstate.h" />
@@ -250,6 +256,7 @@
     <ClInclude Include="meshfield.h" />
     <ClInclude Include="model.h" />
     <ClInclude Include="monitoringstate.h" />
+    <ClInclude Include="MoveCommand.h" />
     <ClInclude Include="particle.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="pressspace.h" />
@@ -259,6 +266,7 @@
     <ClInclude Include="resultbg.h" />
     <ClInclude Include="scene.h" />
     <ClInclude Include="score.h" />
+    <ClInclude Include="ShootCommand.h" />
     <ClInclude Include="skydome.h" />
     <ClInclude Include="slidingState.h" />
     <ClInclude Include="state.h" />

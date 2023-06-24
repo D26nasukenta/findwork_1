@@ -14,6 +14,8 @@
 #include "gaugeback.h"
 #include "meshfield.h"
 #include "controlui.h"
+#include "Command.h"
+#include "InputHudler.h"
 
 bool key = false;
 void PLAYER::Init()
@@ -69,7 +71,14 @@ void PLAYER::Update()
 		PLAYER::playerTutolialMove(scene);
 		if (m_Step >= 3)
 		{
-			PLAYER::playerholdball(scene);
+			InputHudler* inputhendler = nullptr;
+			Command* command = inputhendler->InputHundle();
+
+			if (command)
+			{
+				command->execute(this);
+			}
+			//PLAYER::playerholdball(scene);
 		}
 
 	}

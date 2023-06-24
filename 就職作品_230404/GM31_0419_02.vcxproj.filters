@@ -58,6 +58,12 @@
     <Filter Include="ヘッダー ファイル\EnemyState\BallNotHaveState">
       <UniqueIdentifier>{51c07e0d-9349-4434-95e8-7a232bdbf103}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\コマンドファイル">
+      <UniqueIdentifier>{7bc466fb-7b65-4667-a7b3-a6e089346ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\コマンドファイル">
+      <UniqueIdentifier>{8951b4f0-a2c3-4e82-a13f-b8a0d2fe382a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="renderer.cpp">
@@ -242,6 +248,18 @@
     </ClCompile>
     <ClCompile Include="TackleState.cpp">
       <Filter>ソース ファイル\EnemyState\ballhojistate</Filter>
+    </ClCompile>
+    <ClCompile Include="InputHudler.cpp">
+      <Filter>ソース ファイル\コマンドファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>ソース ファイル\コマンドファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveCommand.cpp">
+      <Filter>ソース ファイル\コマンドファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ShootCommand.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -442,6 +460,18 @@
     </ClInclude>
     <ClInclude Include="TackleState.h">
       <Filter>ヘッダー ファイル\EnemyState\ballhojistate</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>ヘッダー ファイル\コマンドファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHudler.h">
+      <Filter>ヘッダー ファイル\コマンドファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveCommand.h">
+      <Filter>ヘッダー ファイル\コマンドファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootCommand.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
