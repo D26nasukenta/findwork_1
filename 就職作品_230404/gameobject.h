@@ -1,6 +1,6 @@
 #pragma once
 #include "main.h"
-
+#include "input.h"
 class GameObject
 {
 protected:
@@ -194,5 +194,44 @@ public:
 		m_Scale.z = Scale.z + random;
 	}
 
+	void InputMove()
+	{
+		float m_Speed = 1.2f;
 
+		//ここから下は移動キーボード
+		if (GetKeyboardPress(DIK_A))
+		{
+			m_Rotation.y = -D3DX_PI / 2;
+			m_Position.x -= m_Speed * 0.6;
+
+		}
+		if (GetKeyboardPress(DIK_D))
+		{
+
+			m_Rotation.y = D3DX_PI / 2;
+
+			m_Position.x += m_Speed * 0.6;
+
+		}
+		if (GetKeyboardPress(DIK_S))
+		{
+			m_Rotation.y = D3DX_PI;
+
+			m_Position.z -= m_Speed * 0.3;
+
+
+		}
+
+		if (GetKeyboardPress(DIK_W))
+		{
+			m_Rotation.y = 0.0f;
+			m_Position.z += m_Speed * 0.6;
+
+		}
+	}
+
+	void ShootInput()
+	{
+
+	}
 };

@@ -1,4 +1,5 @@
 #pragma once
+#include "gameobject.h"
 #include "Command.h"
 class MoveCommand :
     public Command
@@ -6,7 +7,7 @@ class MoveCommand :
 public:
     virtual void execute(GameObject* gameobject)
     {
-
+        gameobject->InputMove();
     }
 
 };

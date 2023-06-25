@@ -460,105 +460,103 @@ void PLAYER::PlayerRange(Scene* scene)
 
 	//プレイヤーを地面に設置させる
 	m_Position.y = meshfield->GetHeight(m_Position);
-}
-
-//ゲーム時のプレイヤー移動
-void PLAYER::playermove()
-{
-
-	//キックしていないときのみ移動可能
-	if (m_Kickform == false)
-	{
-		//ここから下は移動キーボード
-		if (GetKeyboardPress(DIK_A))
-		{
-			m_Rotation.y = -D3DX_PI / 2;
-			m_Position.x -= m_Speed * 0.6;
-
-		}
-		if (GetKeyboardPress(DIK_D) )
-		{
-
-			m_Rotation.y = D3DX_PI / 2;
-
-			m_Position.x += m_Speed * 0.6;
-
-		}
-		if (GetKeyboardPress(DIK_S) )
-		{
-			m_Rotation.y = D3DX_PI;
-
-			m_Position.z -= m_Speed * 0.3;
 
 
-		}
-
-		if (GetKeyboardPress(DIK_W) )
-		{
-			m_Rotation.y =  0.0f;
-			m_Position.z +=  m_Speed * 0.6;
-
-		}
-		if (IsButtonPressed(0, BUTTON_UP) || IsButtonPressed(0, BUTTON_RIGHT)
-			|| IsButtonPressed(0, BUTTON_DOWN) || IsButtonPressed(0, BUTTON_LEFT))  //ゲームパッド
-		{
-			m_Rotation.y =  - (GetLeftStickAngle(0) - D3DX_PI /2);
-			m_Position += PLAYER::GetForward() * 0.5f;
-		}
-
-
-		if (GetKeyboardPress(DIK_A) || GetKeyboardPress(DIK_W) || GetKeyboardPress(DIK_S) || GetKeyboardPress(DIK_D)
-			|| IsButtonPressed(0, BUTTON_LEFT) || IsButtonPressed(0, BUTTON_RIGHT) || IsButtonPressed(0, BUTTON_DOWN) || IsButtonPressed(0, BUTTON_UP))
-		{
-			m_dribble = true;
-			m_idlechange = true;
-		}
-		else
-		{
-			m_dribble = false;
-			m_idlechange = false;
-		}
-
-	}
-
-
-	//プレイヤーを回転させる
-	if (GetKeyboardPress(DIK_Q))
-	{
-		m_Rotation -= D3DXVECTOR3(0.0f, 0.1f, 0.0f);
-	}
-	//プレイヤーを回転させる
-	if (GetKeyboardPress(DIK_E))
-	{
-		m_Rotation += D3DXVECTOR3(0.0f, 0.1f, 0.0f);
-	}
-
-
-	if (GetKeyboardTrigger(DIK_SPACE) || IsButtonPressed(0, BUTTON_A))
-	{
-
-		m_AnimationName = "Idle";
-		m_idlechange = false;
-	}
-	//プレイヤーの体を待機から走りに変化させる
-	if (m_idlechange == true)
-	{
-		m_AnimationName = "Run";
-		m_Brendlate += 0.04f;
-		if (m_Brendlate >= 1.5f)
-		{
-			m_Brendlate = 1.5f;
-		}
-	}
-	else
-	{
-		m_AnimationName = "Idle";
-		m_Brendlate -= 0.08f;
-		if (m_Brendlate <= 0.0f)
-		{
-			m_Brendlate = 0.0f;
-		}
-	}
-
-
+	//ゲーム時のプレイヤー移動
+	//void PLAYER::playermove()
+	//{
+	//
+	//	//キックしていないときのみ移動可能
+	//	if (m_Kickform == false)
+	//	{
+	//		//ここから下は移動キーボード
+	//		if (GetKeyboardPress(DIK_A))
+	//		{
+	//			m_Rotation.y = -D3DX_PI / 2;
+	//			m_Position.x -= m_Speed * 0.6;
+	//
+	//		}
+	//		if (GetKeyboardPress(DIK_D) )
+	//		{
+	//
+	//			m_Rotation.y = D3DX_PI / 2;
+	//
+	//			m_Position.x += m_Speed * 0.6;
+	//
+	//		}
+	//		if (GetKeyboardPress(DIK_S) )
+	//		{
+	//			m_Rotation.y = D3DX_PI;
+	//
+	//			m_Position.z -= m_Speed * 0.3;
+	//
+	//
+	//		}
+	//
+	//		if (GetKeyboardPress(DIK_W) )
+	//		{
+	//			m_Rotation.y =  0.0f;
+	//			m_Position.z +=  m_Speed * 0.6;
+	//
+	//		}
+	//		if (IsButtonPressed(0, BUTTON_UP) || IsButtonPressed(0, BUTTON_RIGHT)
+	//			|| IsButtonPressed(0, BUTTON_DOWN) || IsButtonPressed(0, BUTTON_LEFT))  //ゲームパッド
+	//		{
+	//			m_Rotation.y =  - (GetLeftStickAngle(0) - D3DX_PI /2);
+	//			m_Position += PLAYER::GetForward() * 0.5f;
+	//		}
+	//
+	//
+	//		if (GetKeyboardPress(DIK_A) || GetKeyboardPress(DIK_W) || GetKeyboardPress(DIK_S) || GetKeyboardPress(DIK_D)
+	//			|| IsButtonPressed(0, BUTTON_LEFT) || IsButtonPressed(0, BUTTON_RIGHT) || IsButtonPressed(0, BUTTON_DOWN) || IsButtonPressed(0, BUTTON_UP))
+	//		{
+	//			m_dribble = true;
+	//			m_idlechange = true;
+	//		}
+	//		else
+	//		{
+	//			m_dribble = false;
+	//			m_idlechange = false;
+	//		}
+	//
+	//	}
+	//
+	//
+	//	//プレイヤーを回転させる
+	//	if (GetKeyboardPress(DIK_Q))
+	//	{
+	//		m_Rotation -= D3DXVECTOR3(0.0f, 0.1f, 0.0f);
+	//	}
+	//	//プレイヤーを回転させる
+	//	if (GetKeyboardPress(DIK_E))
+	//	{
+	//		m_Rotation += D3DXVECTOR3(0.0f, 0.1f, 0.0f);
+	//	}
+	//
+	//
+	//	if (GetKeyboardTrigger(DIK_SPACE) || IsButtonPressed(0, BUTTON_A))
+	//	{
+	//
+	//		m_AnimationName = "Idle";
+	//		m_idlechange = false;
+	//	}
+	//	//プレイヤーの体を待機から走りに変化させる
+	//	if (m_idlechange == true)
+	//	{
+	//		m_AnimationName = "Run";
+	//		m_Brendlate += 0.04f;
+	//		if (m_Brendlate >= 1.5f)
+	//		{
+	//			m_Brendlate = 1.5f;
+	//		}
+	//	}
+	//	else
+	//	{
+	//		m_AnimationName = "Idle";
+	//		m_Brendlate -= 0.08f;
+	//		if (m_Brendlate <= 0.0f)
+	//		{
+	//			m_Brendlate = 0.0f;
+	//		}
+//}
 }
