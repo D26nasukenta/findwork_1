@@ -3,7 +3,8 @@
 #include <string>
 
 #include "gameobject.h"
-
+class Command;
+class InputHudler;
 class PLAYER : public GameObject
 {
 private:
@@ -25,6 +26,8 @@ private:
 	bool m_idlechange = false;
 	D3DXVECTOR3 m_Power;
 	std::string	m_AnimationName;
+	InputHudler* inputhendler = nullptr;
+	Command* command = nullptr;
 
 	class Audio* m_SE;
 
@@ -67,6 +70,6 @@ public:
 
 
 	//プレイヤーの基本的な動き
-	void playermove();
+	//void playermove();
 	
 };

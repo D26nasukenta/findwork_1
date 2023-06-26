@@ -71,8 +71,7 @@ void PLAYER::Update()
 		PLAYER::playerTutolialMove(scene);
 		if (m_Step >= 3)
 		{
-			InputHudler* inputhendler = nullptr;
-			Command* command = inputhendler->InputHundle();
+			command = inputhendler->InputHundle();
 
 			if (command)
 			{
@@ -90,7 +89,7 @@ void PLAYER::Update()
 
 		PLAYER::playerholdball(scene);
 
-		PLAYER::playermove();
+		//PLAYER::playermove();
 	}
 
 }
@@ -343,7 +342,7 @@ void PLAYER::playerTutolialMove(Scene* scene)
 	{
 		m_Frame[0]++;
 
-		PLAYER::playermove();
+		//PLAYER::playermove();
 		if (m_HoldBall == true)
 		{
 			m_Step = 4;
@@ -354,7 +353,7 @@ void PLAYER::playerTutolialMove(Scene* scene)
 	else if (m_Step == 4)//ボールをシュート
 	{
 		m_Frame[0]++;
-		PLAYER::playermove();
+		//PLAYER::playermove();
 		PLAYER::playerholdball(scene);
 
 		if (GetKeyboardRelease(DIK_J) || GetKeyboardRelease(DIK_L)
@@ -378,7 +377,7 @@ void PLAYER::playerTutolialMove(Scene* scene)
 
 		m_Frame[0]++;
 
-		PLAYER::playermove();
+		//PLAYER::playermove();
 		PLAYER::playerholdball(scene);
 		if (m_Frame[0] >= 60 * 30)
 		{
