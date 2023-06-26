@@ -3,22 +3,18 @@
 #include "input.h"
 Command* InputHudler::InputHundle()
 {
-	if (GetKeyboardPress(DIK_A))
+	//AWSEDが入力された場合
+	if (GetKeyboardPress(DIK_A) || GetKeyboardPress(DIK_W)
+		|| GetKeyboardPress(DIK_S) || GetKeyboardPress(DIK_D))
 	{
-		return Button_A;
-	}
-	if (GetKeyboardPress(DIK_W))
-	{
-		return Button_W;
-	}
-	if (GetKeyboardPress(DIK_S))
-	{
-		return Button_S;
-	}
-	if (GetKeyboardPress(DIK_D))
-	{
-		return Button_A;
+		return new MoveCommand();//ムーブコマンドを入れる
 	}
 
-	return nullptr;
+	if (GetKeyboardTrigger(DIK_SPACE))
+	{
+
+		return new ResetCommand();
+	}
+
+	return new StopCommand();
 }

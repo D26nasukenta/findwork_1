@@ -191,6 +191,7 @@
     <ClCompile Include="polygon2D.cpp" />
     <ClCompile Include="pressspace.cpp" />
     <ClCompile Include="renderer.cpp" />
+    <ClCompile Include="ResetCommand.cpp" />
     <ClCompile Include="result.cpp" />
     <ClCompile Include="resultbg.cpp" />
     <ClCompile Include="score.cpp" />
@@ -198,6 +199,7 @@
     <ClCompile Include="skydome.cpp" />
     <ClCompile Include="slidingState.cpp" />
     <ClCompile Include="state.cpp" />
+    <ClCompile Include="StopCommand.cpp" />
     <ClCompile Include="studiam.cpp" />
     <ClCompile Include="TackleState.cpp" />
     <ClCompile Include="texture.cpp" />
@@ -262,6 +264,7 @@
     <ClInclude Include="pressspace.h" />
     <ClInclude Include="renderer.h" />
     <ClInclude Include="polygon2D.h" />
+    <ClInclude Include="ResetCommand.h" />
     <ClInclude Include="result.h" />
     <ClInclude Include="resultbg.h" />
     <ClInclude Include="scene.h" />
@@ -270,6 +273,7 @@
     <ClInclude Include="skydome.h" />
     <ClInclude Include="slidingState.h" />
     <ClInclude Include="state.h" />
+    <ClInclude Include="StopCommand.h" />
     <ClInclude Include="studiam.h" />
     <ClInclude Include="TackleState.h" />
     <ClInclude Include="texture.h" />

@@ -16,12 +16,17 @@ protected:
 	D3DXMATRIX		g_MatrixShadow;		// 影行列
 
 	class Model* g_Model = nullptr;
-	
+
 	class Scene* g_scene = nullptr;
 
 	/*ID3D11VertexShader* m_VertexShader;
 	ID3D11PixelShader* m_PixelShader;
 	ID3D11InputLayout* m_VertexLayout;*/
+
+	bool m_dribble = false;
+	bool m_idlechange = false;
+	bool m_Kickform = false;
+	std::string	m_AnimationName;
 
 public:
 
@@ -183,7 +188,7 @@ public:
 		vy.y = world._22;
 		vy.z = world._23;
 
-		return vy ;
+		return vy;
 	}
 
 	inline void SetRandomRangeScale(D3DXVECTOR3 Scale, float MaxRange, float MinRange)
@@ -194,44 +199,76 @@ public:
 		m_Scale.z = Scale.z + random;
 	}
 
+	//移動用
 	void InputMove()
 	{
 		float m_Speed = 1.2f;
 
-		//ここから下は移動キーボード
-		if (GetKeyboardPress(DIK_A))
+		//シュートボタンを押していなければ
+		if (m_Kickform == false)
 		{
-			m_Rotation.y = -D3DX_PI / 2;
-			m_Position.x -= m_Speed * 0.6;
+			//ここから下は移動キーボード
+			if (GetKeyboardPress(DIK_A))
+			{
+				m_Rotation.y = -D3DX_PI / 2;
+				m_Position.x -= m_Speed * 0.6;
 
-		}
-		if (GetKeyboardPress(DIK_D))
-		{
+			}
+			if (GetKeyboardPress(DIK_D))
+			{
 
-			m_Rotation.y = D3DX_PI / 2;
+				m_Rotation.y = D3DX_PI / 2;
 
-			m_Position.x += m_Speed * 0.6;
+				m_Position.x += m_Speed * 0.6;
 
-		}
-		if (GetKeyboardPress(DIK_S))
-		{
-			m_Rotation.y = D3DX_PI;
+			}
+			if (GetKeyboardPress(DIK_S))
+			{
+				m_Rotation.y = D3DX_PI;
 
-			m_Position.z -= m_Speed * 0.3;
+				m_Position.z -= m_Speed * 0.3;
 
 
-		}
+			}
+			if (GetKeyboardPress(DIK_W))
+			{
+				m_Rotation.y = 0.0f;
+				m_Position.z += m_Speed * 0.6;
 
-		if (GetKeyboardPress(DIK_W))
-		{
-			m_Rotation.y = 0.0f;
-			m_Position.z += m_Speed * 0.6;
+			}
 
+			//プレイヤーのモーションチェンジ
+			if (GetKeyboardPress(DIK_A) || GetKeyboardPress(DIK_W)
+				|| GetKeyboardPress(DIK_S) || GetKeyboardPress(DIK_D))
+			{
+				m_dribble = true;
+				m_idlechange = true;//モーションチェンジ用
+			}
 		}
 	}
 
+	//シュート用
 	void ShootInput()
 	{
 
+	}
+
+	//ボタンを押されていないとき
+	void StopInput()
+	{
+		//プレイヤーのモーションチェンジ
+		if ( (GetKeyboardPress(DIK_A) && GetKeyboardPress(DIK_W)
+			&& GetKeyboardPress(DIK_S) && GetKeyboardPress(DIK_D)) == false)
+		{
+			m_dribble = false;
+			m_idlechange = false;//もーしょんちぇんじ用
+		}
+	}
+
+	//ボールなどをリセット
+	void ResetInput()
+	{
+		m_AnimationName = "Idle";
+		m_idlechange = false;
 	}
 };

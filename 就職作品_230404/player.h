@@ -21,11 +21,10 @@ private:
 
 	float m_Speed = 1.2f;
 	bool m_HoldBall = false;
-	bool m_Kickform = false;
-	bool m_dribble = false;
-	bool m_idlechange = false;
+
+	
 	D3DXVECTOR3 m_Power;
-	std::string	m_AnimationName;
+	
 	InputHudler* inputhendler = nullptr;
 	Command* command = nullptr;
 
@@ -69,7 +68,7 @@ public:
 	void PlayerRange(Scene* scene);
 
 
-	//プレイヤーの基本的な動き
-	//void playermove();
-	
+	//プレイヤーのモーションチェンジ
+	void PlayerMotionChange();
+
 };

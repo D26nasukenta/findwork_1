@@ -1,144 +1,283 @@
-﻿  BallNotHaveFirstState.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-  BallNotRandomState.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-  BallNotWaitState.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-  FirstState.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-  TackleState.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-  approachstate.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+﻿  approachstate.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   aroundstate.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  audio.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameObject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameObject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameObject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameObject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  BallNotHaveFirstState.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  BallNotRandomState.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  BallNotWaitState.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   camera.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   controlui.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   discoverstate.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   doState.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  enemy.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  field.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  FirstState.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   football.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   game.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  gaugeback.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  gaugered.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   goal.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  goal2D.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\goal2D.cpp(88,14): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
+  goalkeeper.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  コードを生成中...
+  コンパイル中...
+  human.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  InputHudler.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   keepercatchstate.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\nasuf\Documents\findwork_1\就職作品_230404\keepercatchstate.cpp(30,15): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\nasuf\Documents\findwork_1\就職作品_230404\keepercatchstate.cpp(35,11): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
   keeperpreparestate.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   keeperstaystate.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  main.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   manager.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  meshfield.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\meshfield.cpp(246,24): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\meshfield.cpp(247,25): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
   monitoringstate.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  MoveCommand.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  particle.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   player.cpp
 C:\Users\nasuf\Documents\findwork_1\就職作品_230404\assimp\defs.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
 C:\Users\nasuf\Documents\findwork_1\就職作品_230404\assimp\matrix3x3.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
 C:\Users\nasuf\Documents\findwork_1\就職作品_230404\assimp\matrix3x3.inl(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
 C:\Users\nasuf\Documents\findwork_1\就職作品_230404\assimp\matrix4x4.inl(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\nasuf\Documents\findwork_1\就職作品_230404\player.cpp(292,34): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\nasuf\Documents\findwork_1\就職作品_230404\player.cpp(311,33): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\nasuf\Documents\findwork_1\就職作品_230404\player.cpp(320,33): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\nasuf\Documents\findwork_1\就職作品_230404\player.cpp(329,33): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  polygon2D.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  pressspace.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\pressspace.cpp(92,19): warning C4305: '+=': 'double' から 'float' へ切り詰めます。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\pressspace.cpp(102,19): warning C4305: '-=': 'double' から 'float' へ切り詰めます。
+  ResetCommand.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  result.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  resultbg.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  score.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\score.cpp(100,12): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\score.cpp(124,39): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\score.cpp(130,42): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\score.cpp(136,48): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\score.cpp(136,39): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+  ShootCommand.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  skydome.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   コードを生成中...
   コンパイル中...
-  skydome.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   slidingState.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  StopCommand.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  studiam.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  TackleState.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   title.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  titlebg.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\titlebg.cpp(91,19): warning C4305: '+=': 'double' から 'float' へ切り詰めます。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\titlebg.cpp(101,19): warning C4305: '-=': 'double' から 'float' へ切り詰めます。
+  titlename.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   titlesecond.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  transition.cpp
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   tutorial.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   waitState.cpp
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(205,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(213,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(220,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(228,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(214,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(222,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(229,1): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\nasuf\Documents\findwork_1\就職作品_230404\gameobject.h(236,1): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
   コードを生成中...
   GM31_0419_02.vcxproj -> C:\Users\nasuf\Documents\findwork_1\就職作品_230404\Debug\GM31_0419_02.exe

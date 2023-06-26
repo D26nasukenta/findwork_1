@@ -261,6 +261,12 @@
     <ClCompile Include="ShootCommand.cpp">
       <Filter>ソース ファイル\コマンドファイル</Filter>
     </ClCompile>
+    <ClCompile Include="StopCommand.cpp">
+      <Filter>ソース ファイル\コマンドファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ResetCommand.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="model.h">
@@ -472,6 +478,12 @@
     </ClInclude>
     <ClInclude Include="ShootCommand.h">
       <Filter>ヘッダー ファイル\コマンドファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="StopCommand.h">
+      <Filter>ヘッダー ファイル\コマンドファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetCommand.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
