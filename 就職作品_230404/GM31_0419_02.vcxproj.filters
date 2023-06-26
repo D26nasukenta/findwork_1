@@ -265,7 +265,7 @@
       <Filter>ソース ファイル\コマンドファイル</Filter>
     </ClCompile>
     <ClCompile Include="ResetCommand.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\コマンドファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -483,7 +483,7 @@
       <Filter>ヘッダー ファイル\コマンドファイル</Filter>
     </ClInclude>
     <ClInclude Include="ResetCommand.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ヘッダー ファイル\コマンドファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
