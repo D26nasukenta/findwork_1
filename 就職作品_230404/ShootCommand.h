@@ -1,6 +1,7 @@
 #pragma once
 #include "Command.h"
 #include "gameobject.h"
+
 class ShootCommand :
     public Command
 {
@@ -10,5 +11,7 @@ public:
     {
         gameobject->ShootInput();
     }
+private:
+
 };
 

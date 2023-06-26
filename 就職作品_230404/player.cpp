@@ -77,6 +77,9 @@ void PLAYER::Update()
 			{
 				command->execute(this);
 			}
+
+			PLAYER::GaugeChnage(m_Kickform, scene);
+
 			//PLAYER::playerholdball(scene);
 		}
 
@@ -157,9 +160,6 @@ void PLAYER::playerholdball(Scene* scene)
 
 	FootBall* football = scene->GetGameObject<FootBall>(1);
 	Goal* goal = scene->GetGameObject<Goal>(1);
-	GaugeBack* gaugeback = scene->GetGameObject<GaugeBack>(2);
-	GaugeRed* gaugered = scene->GetGameObject<GaugeRed>(2);
-
 
 	D3DXVECTOR3 Direction = m_Position - football->GetPosition();
 	float Length = D3DXVec3Length(&Direction);
@@ -194,45 +194,39 @@ void PLAYER::playerholdball(Scene* scene)
 			football->SetRotation(m_Rotation);
 		}
 
-		//シュートボタン押し込み時
-		if (GetKeyboardPress(DIK_J) || IsButtonPressed(0,BUTTON_B))
+		//シュートキーを離したらm_Kickformはfalseになりm_shotFrameは押していた時間
+		if (m_Kickform == false && m_ShotFrame >= 1)
 		{
-			m_Kickform = true;
-			gaugeback->SetAlpha(true);
-			gaugered->SetAlpha(true);
-			m_ShotFrame++;
-			m_Power += D3DXVECTOR3(0.0f, 0.1f, 0.1f);
-		}
-		if (GetKeyboardRelease(DIK_J) || IsButtonReleased(0, BUTTON_B) || m_ShotFrame >= 40)//離した時に弾を蹴る
-		{
+
 			D3DXVECTOR3 GoalDirection = goal->GetPosition() - football->GetPosition();
 			float GoalLength = D3DXVec3Length(&GoalDirection);
 
+			//補正をかけたい
 			if (m_ShotFrame <= 30 && m_ShotFrame >= 10)
 			{
 
 				int time = int(GoalLength / m_Power.z);
 				float m_power_Y = 9.0f / time + (((9.8f / 60) * time) / 2);
 				m_Power.y = m_power_Y;
+
 			}
 
-
+			//ボールにパワーを伝える
 			football->Shoot(m_Power.y, m_Power.z);
-			gaugeback->SetAlpha(false);
-			gaugered->SetAlpha(false);
+
+			//使った変数の初期化
 			m_HoldBall = false;
 			m_Kickform = false;
 			m_Power = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 			m_ShotFrame = 0;
 			m_SE->Play(false, 0.2f);
 		}
+
 		//コントロールシュート
 		if (GetKeyboardPress(DIK_L))
 		{
 			m_Power += D3DXVECTOR3(0.08f, 0.1f, 0.1f);
 			m_Kickform = true;
-			gaugeback->SetAlpha(true);
-			gaugered->SetAlpha(true);
 			m_ShotFrame++;
 		}
 		if (GetKeyboardRelease(DIK_L) || m_ShotFrame >= 40)//離した時に弾を蹴る
@@ -250,8 +244,7 @@ void PLAYER::playerholdball(Scene* scene)
 			}
 
 			football->CurveShoot(m_Power.x, m_Power.y, m_Power.z);
-			gaugeback->SetAlpha(false);
-			gaugered->SetAlpha(false);
+
 			m_HoldBall = false;
 			m_Kickform = false;
 			m_Power = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
@@ -484,6 +477,23 @@ void PLAYER::PlayerMotionChange()
 			m_Brendlate = 0.0f;
 		}
 	}
+
+}
+void PLAYER::GaugeChnage(bool m_Kickform , Scene* scene)
+{
+	GaugeBack* gaugeback = scene->GetGameObject<GaugeBack>(2);
+	GaugeRed* gaugered = scene->GetGameObject<GaugeRed>(2);
+	if (m_Kickform)
+	{
+		gaugeback->SetAlpha(true);
+		gaugered->SetAlpha(true);
+	}
+	else
+	{
+		gaugeback->SetAlpha(false);
+		gaugered->SetAlpha(false);
+	}
+	
 
 }
 	//ゲーム時のプレイヤー移動

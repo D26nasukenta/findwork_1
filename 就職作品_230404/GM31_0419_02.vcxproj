@@ -196,6 +196,7 @@
     <ClCompile Include="resultbg.cpp" />
     <ClCompile Include="score.cpp" />
     <ClCompile Include="ShootCommand.cpp" />
+    <ClCompile Include="ShootReleaseCommand.cpp" />
     <ClCompile Include="skydome.cpp" />
     <ClCompile Include="slidingState.cpp" />
     <ClCompile Include="state.cpp" />
@@ -270,6 +271,7 @@
     <ClInclude Include="scene.h" />
     <ClInclude Include="score.h" />
     <ClInclude Include="ShootCommand.h" />
+    <ClInclude Include="ShootReleaseCommand.h" />
     <ClInclude Include="skydome.h" />
     <ClInclude Include="slidingState.h" />
     <ClInclude Include="state.h" />

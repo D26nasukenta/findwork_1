@@ -15,15 +15,12 @@ private:
 	ID3D11InputLayout* m_VertexLayout;
 
 	int m_Frame[3] = {0,0,0};
-	int m_ShotFrame = 0;
 	int m_Step = 0;
 	float m_Brendlate;
 
 	float m_Speed = 1.2f;
 	bool m_HoldBall = false;
 
-	
-	D3DXVECTOR3 m_Power;
 	
 	InputHudler* inputhendler = nullptr;
 	Command* command = nullptr;
@@ -70,5 +67,8 @@ public:
 
 	//プレイヤーのモーションチェンジ
 	void PlayerMotionChange();
+
+	//シュートゲージを管理
+	void GaugeChnage(bool m_Kickform ,Scene* scene);
 
 };

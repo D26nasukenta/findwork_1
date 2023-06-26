@@ -1,6 +1,7 @@
 #pragma once
 #include "main.h"
 #include "input.h"
+
 class GameObject
 {
 protected:
@@ -27,6 +28,8 @@ protected:
 	bool m_idlechange = false;
 	bool m_Kickform = false;
 	std::string	m_AnimationName;
+	int m_ShotFrame = 0;
+	D3DXVECTOR3 m_Power;
 
 public:
 
@@ -250,7 +253,14 @@ public:
 	//シュート用
 	void ShootInput()
 	{
+		m_Kickform = true;
+		m_ShotFrame++;
+		m_Power += D3DXVECTOR3(0.0f, 0.1f, 0.1f);
+	}
 
+	void ShootOutput()
+	{
+		m_Kickform = false;
 	}
 
 	//ボタンを押されていないとき
@@ -271,4 +281,7 @@ public:
 		m_AnimationName = "Idle";
 		m_idlechange = false;
 	}
+
+	private:
+
 };

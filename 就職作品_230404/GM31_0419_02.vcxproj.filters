@@ -267,6 +267,9 @@
     <ClCompile Include="ResetCommand.cpp">
       <Filter>ソース ファイル\コマンドファイル</Filter>
     </ClCompile>
+    <ClCompile Include="ShootReleaseCommand.cpp">
+      <Filter>ソース ファイル\コマンドファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="model.h">
@@ -288,9 +291,6 @@
       <Filter>ヘッダー ファイル\シーンフォルダ</Filter>
     </ClInclude>
     <ClInclude Include="manager.h">
-      <Filter>ヘッダー ファイル\シーンフォルダ</Filter>
-    </ClInclude>
-    <ClInclude Include="gameobject.h">
       <Filter>ヘッダー ファイル\シーンフォルダ</Filter>
     </ClInclude>
     <ClInclude Include="main.h">
@@ -483,6 +483,12 @@
       <Filter>ヘッダー ファイル\コマンドファイル</Filter>
     </ClInclude>
     <ClInclude Include="ResetCommand.h">
+      <Filter>ヘッダー ファイル\コマンドファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="gameobject.h">
+      <Filter>ヘッダー ファイル\ゲームオブジェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootReleaseCommand.h">
       <Filter>ヘッダー ファイル\コマンドファイル</Filter>
     </ClInclude>
   </ItemGroup>
