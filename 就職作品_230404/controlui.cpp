@@ -274,7 +274,7 @@ void ControlUI::Draw()
 			//テクスチャ設定
 			Renderer::GetDeviceContext()->PSSetShaderResources(0, 1, &m_Texture[4]);
 
-			if (m_alpha >= 1.0f && player->GetTutorialStep() == 4)
+			if (m_alpha >= 1.0f && player->GetTutorialStep() == 3)
 			{
 				m_Frame = 4;
 				m_alpha = 0.0f;
@@ -285,7 +285,7 @@ void ControlUI::Draw()
 			//テクスチャ設定
 			Renderer::GetDeviceContext()->PSSetShaderResources(0, 1, &m_Texture[5]);
 
-			if (m_alpha >= 1.0f && player->GetTutorialStep() == 5)
+			if (m_alpha >= 1.0f && player->GetTutorialStep() == 4)
 			{
 				m_Frame = 5;
 				m_alpha = 0.0f;
@@ -296,7 +296,7 @@ void ControlUI::Draw()
 			//テクスチャ設定
 			Renderer::GetDeviceContext()->PSSetShaderResources(0, 1, &m_Texture[6]);
 
-			if (m_alpha >= 1.0f && player->GetTutorialStep() == 6)
+			if (m_alpha >= 1.0f && player->GetTutorialStep() == 5)
 			{
 				m_Frame = 6;
 				m_alpha = 0.0f;
@@ -307,7 +307,7 @@ void ControlUI::Draw()
 			//テクスチャ設定
 			Renderer::GetDeviceContext()->PSSetShaderResources(0, 1, &m_Texture[7]);
 
-			if (m_alpha >= 1.0f && player->GetTutorialStep() == 7)
+			if (m_alpha >= 1.0f && player->GetTutorialStep() == 6)
 			{
 				m_Frame = 7;
 				m_alpha = 0.0f;

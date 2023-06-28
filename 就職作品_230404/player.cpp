@@ -78,9 +78,8 @@ void PLAYER::Update()
 				command->execute(this);
 			}
 
-			PLAYER::GaugeChnage(m_Kickform, scene);
+			PLAYER::playerholdball(scene);
 
-			//PLAYER::playerholdball(scene);
 		}
 
 	}
@@ -157,7 +156,6 @@ void PLAYER::Draw()
 //プレイヤーがボールを持つ、持っているときの処理
 void PLAYER::playerholdball(Scene* scene)
 {
-
 	FootBall* football = scene->GetGameObject<FootBall>(1);
 	Goal* goal = scene->GetGameObject<Goal>(1);
 
@@ -167,7 +165,8 @@ void PLAYER::playerholdball(Scene* scene)
 	D3DXVECTOR3 Footballforward = football->GetForward();
 	D3DXVECTOR3 Playerforward = PLAYER::GetForward();
 
-
+	GaugeBack* gaugeback = scene->GetGameObject<GaugeBack>(2);
+	GaugeRed* gaugered = scene->GetGameObject<GaugeRed>(2);
 
 	//ボールとプレイヤーの距離が1.5以下なら
 
@@ -194,39 +193,45 @@ void PLAYER::playerholdball(Scene* scene)
 			football->SetRotation(m_Rotation);
 		}
 
-		//シュートキーを離したらm_Kickformはfalseになりm_shotFrameは押していた時間
-		if (m_Kickform == false && m_ShotFrame >= 1)
+		//シュートボタン押し込み時
+		if (GetKeyboardPress(DIK_J) || IsButtonPressed(0, BUTTON_B))
 		{
-
+			m_Kickform = true;
+			gaugeback->SetAlpha(true);
+			gaugered->SetAlpha(true);
+			m_ShotFrame++;
+			m_Power += D3DXVECTOR3(0.0f, 0.1f, 0.1f);
+		}
+		if (GetKeyboardRelease(DIK_J) || IsButtonReleased(0, BUTTON_B) || m_ShotFrame >= 40)//離した時に弾を蹴る
+		{
 			D3DXVECTOR3 GoalDirection = goal->GetPosition() - football->GetPosition();
 			float GoalLength = D3DXVec3Length(&GoalDirection);
 
-			//補正をかけたい
 			if (m_ShotFrame <= 30 && m_ShotFrame >= 10)
 			{
 
 				int time = int(GoalLength / m_Power.z);
 				float m_power_Y = 9.0f / time + (((9.8f / 60) * time) / 2);
 				m_Power.y = m_power_Y;
-
 			}
 
-			//ボールにパワーを伝える
+
 			football->Shoot(m_Power.y, m_Power.z);
 
-			//使った変数の初期化
 			m_HoldBall = false;
 			m_Kickform = false;
+			gaugeback->SetAlpha(false);
+			gaugered->SetAlpha(false);
 			m_Power = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 			m_ShotFrame = 0;
 			m_SE->Play(false, 0.2f);
 		}
-
 		//コントロールシュート
 		if (GetKeyboardPress(DIK_L))
 		{
 			m_Power += D3DXVECTOR3(0.08f, 0.1f, 0.1f);
 			m_Kickform = true;
+
 			m_ShotFrame++;
 		}
 		if (GetKeyboardRelease(DIK_L) || m_ShotFrame >= 40)//離した時に弾を蹴る
@@ -244,7 +249,6 @@ void PLAYER::playerholdball(Scene* scene)
 			}
 
 			football->CurveShoot(m_Power.x, m_Power.y, m_Power.z);
-
 			m_HoldBall = false;
 			m_Kickform = false;
 			m_Power = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
@@ -282,9 +286,8 @@ void PLAYER::playerTutolialMove(Scene* scene)
 		if (GetKeyboardPress(DIK_W) || IsButtonPressed(0, BUTTON_UP))
 		{
 
-			m_Position.z +=  m_Speed * 0.6;
+			m_Position.z += m_Speed * 0.6;
 			m_Frame[0]++;
-
 		}
 
 		//600フレーム、3秒経ったら
@@ -303,18 +306,17 @@ void PLAYER::playerTutolialMove(Scene* scene)
 			m_Rotation.y = -D3DX_PI / 2;
 			m_Position.x -= m_Speed * 0.6;
 			m_Frame[0]++;
-
+			
 		}
+
 		if (GetKeyboardPress(DIK_D) || IsButtonPressed(0, BUTTON_RIGHT))
 		{
-
 			m_Rotation.y = D3DX_PI / 2;
-
 			m_Position.x += m_Speed * 0.6;
-
 			m_Frame[0]++;
 
 		}
+
 		if (GetKeyboardPress(DIK_S) || IsButtonPressed(0, BUTTON_DOWN))
 		{
 			m_Rotation.y = D3DX_PI;
@@ -335,7 +337,6 @@ void PLAYER::playerTutolialMove(Scene* scene)
 	{
 		m_Frame[0]++;
 
-		//PLAYER::playermove();
 		if (m_HoldBall == true)
 		{
 			m_Step = 4;
@@ -369,8 +370,6 @@ void PLAYER::playerTutolialMove(Scene* scene)
 	{
 
 		m_Frame[0]++;
-
-		//PLAYER::playermove();
 		PLAYER::playerholdball(scene);
 		if (m_Frame[0] >= 60 * 30)
 		{
@@ -389,41 +388,42 @@ void PLAYER::playerTutolialMove(Scene* scene)
 		}
 	}
 
-	if (m_Step <= 2)
-	{
-		//ドリブルとアイドルのチェンジをする条件文
-		if (GetKeyboardPress(DIK_A) || GetKeyboardPress(DIK_W) || GetKeyboardPress(DIK_S) || GetKeyboardPress(DIK_D))
-		{
-			m_dribble = true;
-			m_idlechange = true;
-		}
-		else
-		{
-			m_dribble = false;
-			m_idlechange = false;
-		}
+	//if (m_Step <= 2)
+	//{
+	//	//ドリブルとアイドルのチェンジをする条件文
+	//	if (GetKeyboardPress(DIK_A) || GetKeyboardPress(DIK_W) 
+	//		|| GetKeyboardPress(DIK_S) || GetKeyboardPress(DIK_D))
+	//	{
+	//		m_dribble = true;
+	//		m_idlechange = true;
+	//	}
+	//	else
+	//	{
+	//		m_dribble = false;
+	//		m_idlechange = false;
+	//	}
 
-		//プレイヤーの体を待機から走りに変化させる
-		if (m_idlechange == true)
-		{
-			m_AnimationName = "Run";
-			m_Brendlate += 0.04f;
-			if (m_Brendlate >= 1.5f)
-			{
-				m_Brendlate = 1.5f;
-			}
-		}
-		else
-		{
-			m_AnimationName = "Idle";
-			m_Brendlate -= 0.08f;
-			if (m_Brendlate <= 0.0f)
-			{
-				m_Brendlate = 0.0f;
-			}
-		}
+	//	//プレイヤーの体を待機から走りに変化させる
+	//	if (m_idlechange == true)
+	//	{
+	//		m_AnimationName = "Run";
+	//		m_Brendlate += 0.04f;
+	//		if (m_Brendlate >= 1.5f)
+	//		{
+	//			m_Brendlate = 1.5f;
+	//		}
+	//	}
+	//	else
+	//	{
+	//		m_AnimationName = "Idle";
+	//		m_Brendlate -= 0.08f;
+	//		if (m_Brendlate <= 0.0f)
+	//		{
+	//			m_Brendlate = 0.0f;
+	//		}
+	//	}
 
-	}
+	//}
 
 }
 
@@ -458,6 +458,19 @@ void PLAYER::PlayerRange(Scene* scene)
 //プレイヤーのモーションチェンジ
 void PLAYER::PlayerMotionChange()
 {
+
+	if (GetKeyboardPress(DIK_A) || GetKeyboardPress(DIK_W)
+		|| GetKeyboardPress(DIK_S) || GetKeyboardPress(DIK_D)
+		|| IsButtonPressed(0, BUTTON_UP) || IsButtonPressed(0, BUTTON_RIGHT)
+		|| IsButtonPressed(0, BUTTON_DOWN) || IsButtonPressed(0, BUTTON_LEFT))
+	{
+		m_idlechange = true;
+	}
+	else
+	{
+		m_idlechange = false;
+	}
+
 	//プレイヤーの体を待機から走りに変化させる
 	if (m_idlechange == true)
 	{
@@ -479,49 +492,5 @@ void PLAYER::PlayerMotionChange()
 	}
 
 }
-void PLAYER::GaugeChnage(bool m_Kickform , Scene* scene)
-{
-	GaugeBack* gaugeback = scene->GetGameObject<GaugeBack>(2);
-	GaugeRed* gaugered = scene->GetGameObject<GaugeRed>(2);
-	if (m_Kickform)
-	{
-		gaugeback->SetAlpha(true);
-		gaugered->SetAlpha(true);
-	}
-	else
-	{
-		gaugeback->SetAlpha(false);
-		gaugered->SetAlpha(false);
-	}
-	
 
-}
-	//ゲーム時のプレイヤー移動
-	//void PLAYER::playermove()
-	//{
-	//
-	//	//キックしていないときのみ移動可能
-	//	if (m_Kickform == false)
-	//	{
 	
-	//		if (IsButtonPressed(0, BUTTON_UP) || IsButtonPressed(0, BUTTON_RIGHT)
-	//			|| IsButtonPressed(0, BUTTON_DOWN) || IsButtonPressed(0, BUTTON_LEFT))  //ゲームパッド
-	//		{
-	//			m_Rotation.y =  - (GetLeftStickAngle(0) - D3DX_PI /2);
-	//			m_Position += PLAYER::GetForward() * 0.5f;
-	//		}
-	//
-	//
-	//		if (IsButtonPressed(0, BUTTON_LEFT) || IsButtonPressed(0, BUTTON_RIGHT) || IsButtonPressed(0, BUTTON_DOWN) || IsButtonPressed(0, BUTTON_UP))
-	//		{
-	//			m_dribble = true;
-	//			m_idlechange = true;
-	//		}
-	//		else
-	//		{
-	//			m_dribble = false;
-	//			m_idlechange = false;
-	//		}
-	//
-	//	}
-//}

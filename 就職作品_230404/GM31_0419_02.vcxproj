@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -186,6 +186,7 @@
     <ClCompile Include="model.cpp" />
     <ClCompile Include="monitoringstate.cpp" />
     <ClCompile Include="MoveCommand.cpp" />
+    <ClCompile Include="MovePadCommand.cpp" />
     <ClCompile Include="particle.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="polygon2D.cpp" />
@@ -260,6 +261,7 @@
     <ClInclude Include="model.h" />
     <ClInclude Include="monitoringstate.h" />
     <ClInclude Include="MoveCommand.h" />
+    <ClInclude Include="MovePadCommand.h" />
     <ClInclude Include="particle.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="pressspace.h" />

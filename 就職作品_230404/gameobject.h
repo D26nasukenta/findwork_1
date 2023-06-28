@@ -215,52 +215,52 @@ public:
 			{
 				m_Rotation.y = -D3DX_PI / 2;
 				m_Position.x -= m_Speed * 0.6;
-
+			
 			}
+			
+
 			if (GetKeyboardPress(DIK_D))
 			{
 
 				m_Rotation.y = D3DX_PI / 2;
 
 				m_Position.x += m_Speed * 0.6;
+				
 
 			}
+
 			if (GetKeyboardPress(DIK_S))
 			{
 				m_Rotation.y = D3DX_PI;
 
 				m_Position.z -= m_Speed * 0.3;
 
-
 			}
+
 			if (GetKeyboardPress(DIK_W))
 			{
 				m_Rotation.y = 0.0f;
 				m_Position.z += m_Speed * 0.6;
-
 			}
 
-			//プレイヤーのモーションチェンジ
-			if (GetKeyboardPress(DIK_A) || GetKeyboardPress(DIK_W)
-				|| GetKeyboardPress(DIK_S) || GetKeyboardPress(DIK_D))
-			{
-				m_dribble = true;
-				m_idlechange = true;//モーションチェンジ用
-			}
 		}
 	}
 
-	//シュート用
-	void ShootInput()
+	//移動用
+	void InputPadMove()
 	{
-		m_Kickform = true;
-		m_ShotFrame++;
-		m_Power += D3DXVECTOR3(0.0f, 0.1f, 0.1f);
-	}
+		//シュートボタンを押していなければ
+		if (m_Kickform == false)
+		{
+			if (IsButtonPressed(0, BUTTON_UP) || IsButtonPressed(0, BUTTON_RIGHT)
+				|| IsButtonPressed(0, BUTTON_DOWN) || IsButtonPressed(0, BUTTON_LEFT))  //ゲームパッド
+			{
+				m_Rotation.y = -(GetLeftStickAngle(0) - D3DX_PI / 2);
+				m_Position += GameObject::GetForward() * 0.5f;
+				m_dribble = true;
+			}
+		}
 
-	void ShootOutput()
-	{
-		m_Kickform = false;
 	}
 
 	//ボタンを押されていないとき
@@ -271,7 +271,7 @@ public:
 			&& GetKeyboardPress(DIK_S) && GetKeyboardPress(DIK_D)) == false)
 		{
 			m_dribble = false;
-			m_idlechange = false;//もーしょんちぇんじ用
+
 		}
 	}
 

@@ -82,7 +82,7 @@ void GaugeRed::Draw()
 	if (m_trans == true)
 	{
 		m_alpha = 1.0f;
-		m_change.x += 1.4f;
+		m_change.x += 1.4f * 2;
 	}
 	else
 	{

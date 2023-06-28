@@ -8,7 +8,14 @@ Command* InputHudler::InputHundle()
 	if (GetKeyboardPress(DIK_A) || GetKeyboardPress(DIK_W)
 		|| GetKeyboardPress(DIK_S) || GetKeyboardPress(DIK_D))
 	{
-		return new MoveCommand();//ムーブコマンドを入れる
+		return new MoveCommand();//InputMove
+	}
+
+	//ゲームパッド
+	if (IsButtonPressed(0, BUTTON_UP) || IsButtonPressed(0, BUTTON_RIGHT)
+		|| IsButtonPressed(0, BUTTON_DOWN) || IsButtonPressed(0, BUTTON_LEFT)) 
+	{
+		return new MovePadCommand();//InputPadMove
 	}
 
 	if (GetKeyboardTrigger(DIK_SPACE))
@@ -17,15 +24,6 @@ Command* InputHudler::InputHundle()
 		return new ResetCommand();
 	}
 
-	if (GetKeyboardPress(DIK_J) || IsButtonPressed(0, BUTTON_B))
-	{
-		m_shotFrame++;
-		return new ShootCommand();
-	}
-	if (GetKeyboardRelease(DIK_J) || IsButtonReleased(0, BUTTON_B) || m_shotFrame >= 40)//離した時に弾を蹴る
-	{
-		return new ShootReleaseCommand();
-	}
 
 	return new StopCommand();
 }

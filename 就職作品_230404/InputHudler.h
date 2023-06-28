@@ -1,9 +1,8 @@
 #pragma once
 #include "MoveCommand.h"
-#include "ShootCommand.h"
 #include "StopCommand.h"
 #include "ResetCommand.h"
-#include "ShootReleaseCommand.h"
+#include "MovePadCommand.h"
 class Command;
 class InputHudler
 {
