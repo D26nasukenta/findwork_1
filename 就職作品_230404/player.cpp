@@ -68,7 +68,9 @@ void PLAYER::Update()
 	{
 		PLAYER::PlayerRange(scene);
 		PLAYER::playerTutolialMove(scene);
-		PLAYER::PlayerMotionChange();
+		//PLAYER::PlayerMotionChange();
+		PLAYER::playerholdball(scene);
+
 		if (m_Step >= 3)
 		{
 			command = inputhendler->InputHundle();
@@ -78,8 +80,7 @@ void PLAYER::Update()
 				command->execute(this);
 			}
 
-			PLAYER::playerholdball(scene);
-
+			
 		}
 
 	}
@@ -89,9 +90,15 @@ void PLAYER::Update()
 	{
 		PLAYER::PlayerRange(scene);
 
+		command = inputhendler->InputHundle();
+
+		if (command)
+		{
+			command->execute(this);
+		}
+		
 		PLAYER::playerholdball(scene);
 
-		//PLAYER::playermove();
 	}
 
 }
@@ -180,7 +187,7 @@ void PLAYER::playerholdball(Scene* scene)
 	if (m_HoldBall == true)
 	{
 
-		m_Frame[1]++;
+		//m_Frame[1]++;
 
 		//プレイヤーの足元にボールを
 		football->SetPosition(m_Position + Playerforward * 3);
@@ -270,7 +277,7 @@ void PLAYER::playerholdball(Scene* scene)
 		m_Frame[1]++;
 	}
 
-
+	PLAYER::PlayerMotionChange();
 }
 
 //プレイヤーのチュートリアル時の挙動
@@ -287,15 +294,15 @@ void PLAYER::playerTutolialMove(Scene* scene)
 		{
 
 			m_Position.z += m_Speed * 0.6;
-			m_Frame[0]++;
+			m_Frame[2]++;
 		}
 
 		//600フレーム、3秒経ったら
-		if (m_Frame[0] >= 60 * 3)
+		if (m_Frame[2] >= 60 * 3)
 		{
 			//次のステップへ　
 			m_Step = 2;
-			m_Frame[0] = 0;
+			m_Frame[2] = 0;
 			m_Position = D3DXVECTOR3(0.0f, 0.0f, -30.0f);
 		}
 	}
@@ -305,7 +312,7 @@ void PLAYER::playerTutolialMove(Scene* scene)
 		{
 			m_Rotation.y = -D3DX_PI / 2;
 			m_Position.x -= m_Speed * 0.6;
-			m_Frame[0]++;
+			m_Frame[2]++;
 			
 		}
 
@@ -313,7 +320,7 @@ void PLAYER::playerTutolialMove(Scene* scene)
 		{
 			m_Rotation.y = D3DX_PI / 2;
 			m_Position.x += m_Speed * 0.6;
-			m_Frame[0]++;
+			m_Frame[2]++;
 
 		}
 
@@ -323,38 +330,34 @@ void PLAYER::playerTutolialMove(Scene* scene)
 
 			m_Position.z -= m_Speed * 0.3;
 
-			m_Frame[0]++;
+			m_Frame[2]++;
 		}
 
-		if (m_Frame[0] >= 60 * 6)
+		if (m_Frame[2] >= 60 * 6)
 		{
 			m_Step = 3;
-			m_Frame[0] = 0;
+			m_Frame[2] = 0;
 			m_Position = D3DXVECTOR3(0.0f, 0.0f, -40.0f);
 		}
 	}
 	else if (m_Step == 3)//ボールを保持する
 	{
-		m_Frame[0]++;
 
 		if (m_HoldBall == true)
 		{
 			m_Step = 4;
-			m_Frame[0] = 0;
 		}
 
 	}
 	else if (m_Step == 4)//ボールをシュート
 	{
-		m_Frame[0]++;
 		//PLAYER::playermove();
-		PLAYER::playerholdball(scene);
+		//PLAYER::playerholdball(scene);
 
 		if (GetKeyboardRelease(DIK_J) || GetKeyboardRelease(DIK_L)
 			|| IsButtonReleased(0,BUTTON_B))
 		{
 			m_Step = 5;
-			m_Frame[0] = 0;
 		}
 	}
 	else if (m_Step == 5)//場所等のリセット
@@ -368,21 +371,20 @@ void PLAYER::playerTutolialMove(Scene* scene)
 	}
 	else if (m_Step == 6)//自由時間
 	{
-
-		m_Frame[0]++;
-		PLAYER::playerholdball(scene);
-		if (m_Frame[0] >= 60 * 30)
+		m_Frame[2]++;
+		//PLAYER::playerholdball(scene);
+		if (m_Frame[2] >= 60 * 30)
 		{
 			m_Step = 7;
-			m_Frame[0] = 0;
+			m_Frame[2] = 0;
 			m_Position = D3DXVECTOR3(0.0f, 0.0f, -40.0f);
 		}
 
 	}
 	else if (m_Step == 7)
 	{
-		m_Frame[0] ++;
-		if (m_Frame[0] >= 10)
+		m_Frame[2] ++;
+		if (m_Frame[2] >= 10)
 		{
 			m_Step = 8;
 		}
@@ -464,16 +466,8 @@ void PLAYER::PlayerMotionChange()
 		|| IsButtonPressed(0, BUTTON_UP) || IsButtonPressed(0, BUTTON_RIGHT)
 		|| IsButtonPressed(0, BUTTON_DOWN) || IsButtonPressed(0, BUTTON_LEFT))
 	{
+		m_Frame[0]++;
 		m_idlechange = true;
-	}
-	else
-	{
-		m_idlechange = false;
-	}
-
-	//プレイヤーの体を待機から走りに変化させる
-	if (m_idlechange == true)
-	{
 		m_AnimationName = "Run";
 		m_Brendlate += 0.04f;
 		if (m_Brendlate >= 1.5f)
@@ -489,6 +483,17 @@ void PLAYER::PlayerMotionChange()
 		{
 			m_Brendlate = 0.0f;
 		}
+		m_idlechange = false;
+	}
+
+	//プレイヤーの体を待機から走りに変化させる
+	if (m_idlechange == true)
+	{
+		
+	}
+	else
+	{
+		
 	}
 
 }

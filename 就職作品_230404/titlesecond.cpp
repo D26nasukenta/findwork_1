@@ -85,7 +85,7 @@ void TitleSecond::Update()
 {
 
 	Scene::Update();
-	if (GetKeyboardTrigger(DIK_SPACE))
+	if (GetKeyboardTrigger(DIK_SPACE) || IsButtonTriggered(0, BUTTON_A))
 	{
 		transition->Start(false);
 	}

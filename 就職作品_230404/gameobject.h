@@ -257,7 +257,7 @@ public:
 			{
 				m_Rotation.y = -(GetLeftStickAngle(0) - D3DX_PI / 2);
 				m_Position += GameObject::GetForward() * 0.5f;
-				m_dribble = true;
+
 			}
 		}
 
@@ -270,7 +270,8 @@ public:
 		if ( (GetKeyboardPress(DIK_A) && GetKeyboardPress(DIK_W)
 			&& GetKeyboardPress(DIK_S) && GetKeyboardPress(DIK_D)) == false)
 		{
-			m_dribble = false;
+			m_AnimationName = "Idle";
+			m_idlechange = false;
 
 		}
 	}
